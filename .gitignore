@@ -1,42 +1,91 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+### =========================
+### 🔹 Java / Spring Boot
+### =========================
+# Compilación y empaquetado
+/target/
+/build/
+/out/
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+*.swp
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
+# Archivos de configuración de Spring Boot
+*.pid
 
-# IDEs and editors
+### =========================
+### 🔹 IntelliJ IDEA
+### =========================
 .idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+*.iml
+*.ipr
+*.iws
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+# Configuración específica de IntelliJ
+out/
+!**/src/main/**/out/
 
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+### =========================
+### 🔹 Node / Angular
+### =========================
+# Dependencias
+node_modules/
+jspm_packages/
 
-# System files
+# Builds
+/dist/
+/tmp/
+/out-tsc/
+/coverage/
+
+# Archivos de lock opcionales (si quieres solo uno)
+/yarn.lock
+/pnpm-lock.yaml
+# Deja package-lock.json si lo quieres controlar, si no, ignóralo también
+/package-lock.json
+
+# Archivos de cache
+.npm/
+.eslintcache
+.cache/
+.angular/cache/
+
+# Archivos de test
+/karma.conf.js
+/coverage/
+
+### =========================
+### 🔹 SO / Editor
+### =========================
+# macOS
 .DS_Store
+
+# Windows
 Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# VSCode
+.vscode/
+.history/
+
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+### =========================
+### 🔹 Otros
+### =========================
+# Archivos comprimidos
+*.zip
+*.tar.gz
+*.rar
+
+# Backups
+*.bak
+*.old
